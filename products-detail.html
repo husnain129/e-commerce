@@ -1,231 +1,255 @@
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HunnyStore | Ecommerce Store</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
 
-<body>
-
+  <body>
     <!-- -------------Navbar----------- -->
 
     <div class="container">
-        <div class="navbar">
-            <div class="logo">
-                <img src="RedStore_img/images/logo.png" alt="logo" width="125px">
-            </div>
-            <nav>
-                <ul id="MenuItems">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a
-                            href="products.html">Products</a>
-                    </li>
-                    <!-- <li><a href="AboutUs.html">About</a></li> -->
-                    <li><a href="ContactUs.html">Contact</a></li>
-                    <li><a href="account.html">Account</a></li>
-                </ul>
-            </nav>
-            <img src="RedStore_img/images/cart.png" alt="cart" width="30px" height="30px">
-            <img src="RedStore_img/images/menu.png" alt="cart" class="menu-icon" onclick="menuToggle()">
+      <div class="navbar">
+        <div class="logo">
+          <img src="./RedStore_img/images/logo.png" alt="logo" width="125px" />
         </div>
+        <nav>
+          <ul id="MenuItems">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <!-- <li><a href="AboutUs.html">About</a></li> -->
+            <li><a href="ContactUs.html">Contact</a></li>
+            <li><a href="account.html">Account</a></li>
+          </ul>
+        </nav>
+        <img
+          src="./RedStore_img/images/cart.png"
+          alt="cart"
+          width="30px"
+          height="30px"
+        />
+        <img
+          src="./RedStore_img/images/menu.png"
+          alt="cart"
+          class="menu-icon"
+          onclick="menuToggle()"
+        />
+      </div>
 
-        <!-- ------------Single_Products_Detail----------->
+      <!-- ------------Single_Products_Detail----------->
 
-        <div class="small-container">
-            <div class="row">
-                <div class="col-2">
-                    <img src="RedStore_img/images/gallery-1.jpg" id="ProductImg" />
-                    <div class="small-img-row">
-                        <div class="small-img-col">
-                            <img src="RedStore_img/images/gallery-1.jpg" width="100%" class="small-img" />
-                        </div>
-                        <div class="small-img-col">
-                            <img src="RedStore_img/images/gallery-2.jpg" width="100%" class="small-img" />
-                        </div>
-                        <div class="small-img-col">
-                            <img src="RedStore_img/images/gallery-3.jpg" width="100%" class="small-img" />
-                        </div>
-                        <div class="small-img-col">
-                            <img src="RedStore_img/images/gallery-4.jpg" width="100%" class="small-img" />
-                        </div>
-                    </div>
-                </div>
-                <div class="col-2">
-                    <p>Home / T-Shirt</p>
-                    <h1>Red Printed T-Shirt by HK</h1>
-                    <h4>$50.00</h4>
-                    <div class="page-btn" style="margin: 10px auto 5px;">
-                        <span>XS</span>
-                        <span>S</span>
-                        <span>M</span>
-                        <span>L</span>
-                    </div>
-                    <div class="wishList_parent">
-                        <div class="wishList_parent_text">
-                            <p><a href="#">ADD TO CART</a></p>
-                        </div>
-                        <div class="wishList_parent_wish"></div>
-                    </div>
-                    <h3>Product Details</h3>
-                    <p>Discover the Collection of Men's T-Shirts and
-                        Polos at GUCCI.com. Shop Printed and Embroidered
-                        Styles. Enjoy Free Shipping and Unique Gift Wrapping.</p>
-                </div>
+      <div class="small-container">
+        <div class="row">
+          <div class="col-2">
+            <img src="./RedStore_img/images/gallery-1.jpg" id="ProductImg" />
+            <div class="small-img-row">
+              <div class="small-img-col">
+                <img
+                  src="./RedStore_img/images/gallery-1.jpg"
+                  width="100%"
+                  class="small-img"
+                />
+              </div>
+              <div class="small-img-col">
+                <img
+                  src="./RedStore_img/images/gallery-2.jpg"
+                  width="100%"
+                  class="small-img"
+                />
+              </div>
+              <div class="small-img-col">
+                <img
+                  src="./RedStore_img/images/gallery-3.jpg"
+                  width="100%"
+                  class="small-img"
+                />
+              </div>
+              <div class="small-img-col">
+                <img
+                  src="./RedStore_img/images/gallery-4.jpg"
+                  width="100%"
+                  class="small-img"
+                />
+              </div>
             </div>
+          </div>
+          <div class="col-2">
+            <p>Home / T-Shirt</p>
+            <h1>Red Printed T-Shirt by HK</h1>
+            <h4>$50.00</h4>
+            <div class="page-btn" style="margin: 10px auto 5px">
+              <span>XS</span>
+              <span>S</span>
+              <span>M</span>
+              <span>L</span>
+            </div>
+            <div class="wishList_parent">
+              <div class="wishList_parent_text">
+                <p><a href="#">ADD TO CART</a></p>
+              </div>
+              <div class="wishList_parent_wish"></div>
+            </div>
+            <h3>Product Details</h3>
+            <p>
+              Discover the Collection of Men's T-Shirts and Polos at GUCCI.com.
+              Shop Printed and Embroidered Styles. Enjoy Free Shipping and
+              Unique Gift Wrapping.
+            </p>
+          </div>
         </div>
+      </div>
 
-        <!-- -------------Title------------->
+      <!-- -------------Title------------->
 
-        <div class="small-container">
-            <div class="row row-2">
-                <h2>Related Products</h2>
-                <p>View More</p>
-            </div>
+      <div class="small-container">
+        <div class="row row-2">
+          <h2>Related Products</h2>
+          <p>View More</p>
         </div>
+      </div>
 
-        <!-- -----------Products------------->
-        <div class="small-container">
-            <div class="row">
-                <div class="col-4">
-                    <img src="RedStore_img/images/product-1.jpg" alt="">
-                    <h4>Red Printed T-Shirt</h4>
-                    <div class="rating">
-                        <i class="fa fa-star-o" style="color: red;"></i>
-                        <i class="fa fa-star-o"></i>
-                        <i class="fa fa-star-o"></i>
-                        <i class="fa fa-star-o"></i>
-                        <i class="fa fa-star-o"></i>
-                    </div>
-                    <p>$50.00</p>
-                </div>
-                <div class="col-4">
-                    <img src="RedStore_img/images/product-2.jpg" alt="">
-                    <h4>Red Printed T-Shirt</h4>
-                    <div class="rating">
-                        <i class="fa fa-star-o" style="color: red;"></i>
-                        <i class="fa fa-star-o"></i>
-                        <i class="fa fa-star-o"></i>
-                        <i class="fa fa-star-o"></i>
-                        <i class="fa fa-star-o"></i>
-                    </div>
-                    <p>$50.00</p>
-                </div>
-                <div class="col-4">
-                    <img src="RedStore_img/images/product-3.jpg" alt="">
-                    <h4>Red Printed T-Shirt</h4>
-                    <div class="rating">
-                        <i class="fa fa-star-o" style="color: red;"></i>
-                        <i class="fa fa-star-o"></i>
-                        <i class="fa fa-star-o"></i>
-                        <i class="fa fa-star-o"></i>
-                        <i class="fa fa-star-o"></i>
-                    </div>
-                    <p>$50.00</p>
-                </div>
-                <div class="col-4">
-                    <img src="RedStore_img/images/product-4.jpg" alt="">
-                    <h4>Red Printed T-Shirt</h4>
-                    <div class="rating">
-                        <i class="fa fa-star-o" style="color: red;"></i>
-                        <i class="fa fa-star-o"></i>
-                        <i class="fa fa-star-o"></i>
-                        <i class="fa fa-star-o"></i>
-                        <i class="fa fa-star-o"></i>
-                    </div>
-                    <p>$50.00</p>
-                </div>
+      <!-- -----------Products------------->
+      <div class="small-container">
+        <div class="row">
+          <div class="col-4">
+            <img src="./RedStore_img/images/product-1.jpg" alt="" />
+            <h4>Red Printed T-Shirt</h4>
+            <div class="rating">
+              <i class="fa fa-star-o" style="color: red"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i>
             </div>
-            <div class="page-btn">
-                <span>1</span>
-                <span>2</span>
-                <span>3</span>
-                <span>4</span>
-                <span>&#8594;</span>
+            <p>$50.00</p>
+          </div>
+          <div class="col-4">
+            <img src="./RedStore_img/images/product-2.jpg" alt="" />
+            <h4>Red Printed T-Shirt</h4>
+            <div class="rating">
+              <i class="fa fa-star-o" style="color: red"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i>
             </div>
+            <p>$50.00</p>
+          </div>
+          <div class="col-4">
+            <img src="./RedStore_img/images/product-3.jpg" alt="" />
+            <h4>Red Printed T-Shirt</h4>
+            <div class="rating">
+              <i class="fa fa-star-o" style="color: red"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <p>$50.00</p>
+          </div>
+          <div class="col-4">
+            <img src="./RedStore_img/images/product-4.jpg" alt="" />
+            <h4>Red Printed T-Shirt</h4>
+            <div class="rating">
+              <i class="fa fa-star-o" style="color: red"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <p>$50.00</p>
+          </div>
         </div>
+        <div class="page-btn">
+          <span>1</span>
+          <span>2</span>
+          <span>3</span>
+          <span>4</span>
+          <span>&#8594;</span>
+        </div>
+      </div>
     </div>
     <!-- ---------footer--------->
 
     <div class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="footer-col-1">
-                    <h3>Download Our App</h3>
-                    <p>Download App for Android and ios modile phone</p>
-                    <div class="app-logo">
-                        <img src="RedStore_img/images/play-store.png" alt="img">
-                        <img src="RedStore_img/images/app-store.png" alt="img">
-                    </div>
-                </div>
-                <div class="footer-col-2">
-                    <img src="RedStore_img/images/logo-white.png" alt="">
-                    <p>Our purpose is to miantain sustainability Mek the Pleasure and
-                        Benefit of Sports Accessible to many.
-                    </p>
-                </div>
-                <div class="footer-col-3">
-                    <h3>Useful Links</h3>
-                    <ul>
-                        <li>Coupons</li>
-                        <li>Blog Post</li>
-                        <li>Return to Policy</li>
-                        <li>Join Affiliate</li>
-                    </ul>
-                </div>
-                <div class="footer-col-4">
-                    <h3>Follow Us</h3>
-                    <ul>
-                        <li>FaceBook</li>
-                        <li>Twitter</li>
-                        <li>Instagram</li>
-                        <li>YouTube</li>
-                    </ul>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <h3>Download Our App</h3>
+            <p>Download App for Android and ios modile phone</p>
+            <div class="app-logo">
+              <img src="./RedStore_img/images/play-store.png" alt="img" />
+              <img src="./RedStore_img/images/app-store.png" alt="img" />
             </div>
-            <hr>
-            <p class="copyright">Copyright 2020 - Hunny Khan</p>
+          </div>
+          <div class="footer-col-2">
+            <img src="./RedStore_img/images/logo-white.png" alt="" />
+            <p>
+              Our purpose is to miantain sustainability Mek the Pleasure and
+              Benefit of Sports Accessible to many.
+            </p>
+          </div>
+          <div class="footer-col-3">
+            <h3>Useful Links</h3>
+            <ul>
+              <li>Coupons</li>
+              <li>Blog Post</li>
+              <li>Return to Policy</li>
+              <li>Join Affiliate</li>
+            </ul>
+          </div>
+          <div class="footer-col-4">
+            <h3>Follow Us</h3>
+            <ul>
+              <li>FaceBook</li>
+              <li>Twitter</li>
+              <li>Instagram</li>
+              <li>YouTube</li>
+            </ul>
+          </div>
         </div>
+        <hr />
+        <p class="copyright">Copyright 2020 - Hunny Khan</p>
+      </div>
     </div>
 
     <!-- ----------------js for toggle menu----------->
 
     <script>
-        var MenuItems = document.getElementById('MenuItems')
-        MenuItems.style.maxHeight = "0px";
-        function menuToggle() {
-            if (MenuItems.style.maxHeight == "0px") {
-                MenuItems.style.maxHeight = "200px"
-            }
-            else {
-                MenuItems.style.maxHeight = "0px"
-            }
+      var MenuItems = document.getElementById("MenuItems");
+      MenuItems.style.maxHeight = "0px";
+      function menuToggle() {
+        if (MenuItems.style.maxHeight == "0px") {
+          MenuItems.style.maxHeight = "200px";
+        } else {
+          MenuItems.style.maxHeight = "0px";
         }
-
+      }
     </script>
     <!-- ---------------Js For Product Gallery------------->
     <script>
-        var SmallImg = document.getElementsByClassName("small-img");
-         SmallImg[0].onclick = function () {
-            ProductImg.src = SmallImg[0].src;
-        }
-        SmallImg[1].onclick = function () {
-            ProductImg.src = SmallImg[1].src;
-        }
-        SmallImg[2].onclick = function () {
-            ProductImg.src = SmallImg[2].src;
-        }
-        SmallImg[3].onclick = function () {
-            ProductImg.src = SmallImg[3].src;
-        } 
-       
+      var SmallImg = document.getElementsByClassName("small-img");
+      SmallImg[0].onclick = function () {
+        ProductImg.src = SmallImg[0].src;
+      };
+      SmallImg[1].onclick = function () {
+        ProductImg.src = SmallImg[1].src;
+      };
+      SmallImg[2].onclick = function () {
+        ProductImg.src = SmallImg[2].src;
+      };
+      SmallImg[3].onclick = function () {
+        ProductImg.src = SmallImg[3].src;
+      };
     </script>
-
-</body>
-
-
+  </body>
 </html>
