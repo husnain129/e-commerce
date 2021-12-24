@@ -1,0 +1,159 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HunnyStore | Ecommerce Store</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="contact.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <!-- -------------Navbar----------- -->
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="RedStore_img/images/logo.png" alt="logo" width="125px">
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <!-- <li><a href="AboutUs.html">About</a></li> -->
+                        <li><a href="ContactUs.html">Contact</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html"><img src="RedStore_img/images/cart.png" alt="cart" width="30px" height="30px"></a>
+                <img src="RedStore_img/images/menu.png" alt="cart" class="menu-icon" onclick="menuToggle()">
+            </div>
+            <!-- ------------Contact Us----------->
+            <div class="card_container">
+                <div class="card">
+                    <div class="card_left">
+                        <h3>send us a message </h3>
+
+                        <form>
+                            <div class="group">
+                                <input type="text" required>
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                                <label>Name</label>
+                            </div>
+
+                            <div class="group">
+                                <input type="text" required>
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                                <label>Email</label>
+                            </div>
+                            <div class="group">
+                                <input type="text" required>
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                                <label>Message</label>
+                            </div>
+                        </form>
+                        <button class="form_btn">Contact Now &#8594;</a>
+
+                    </div>
+                    <div class="card_right">
+                        <p>Contact Information</p>
+                        <div class="info">
+                            <p><i class="logo fa fa-map-marker fa-2x"></i> 360 KING STREET<br />HasilPur Pakistan,63000
+                            </p>
+
+                            <p><i class="logo fa fa-phone fa-2x"></i>+92 308 701 1212</p>
+                            <p><i class="logo fa fa-envelope fa-2x"></i>mlhlk1212@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ---------footer--------->
+
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Download Our App</h3>
+                        <p>Download App for Android and ios modile phone</p>
+                        <div class="app-logo">
+                            <img src="RedStore_img/images/play-store.png" alt="img">
+                            <img src="RedStore_img/images/app-store.png" alt="img">
+                        </div>
+                    </div>
+                    <div class="footer-col-2">
+                        <img src="RedStore_img/images/logo-white.png" alt="">
+                        <p>Our purpose is to miantain sustainability Mek the Pleasure and
+                            Benefit of Sports Accessible to many.
+                        </p>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li>Coupons</li>
+                            <li>Blog Post</li>
+                            <li>Return to Policy</li>
+                            <li>Join Affiliate</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Follow Us</h3>
+                        <ul>
+                            <li>FaceBook</li>
+                            <li>Twitter</li>
+                            <li>Instagram</li>
+                            <li>YouTube</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <p class="copyright">Copyright 2020 - Hunny Khan</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------------js for toggle menu----------->
+
+    <script>
+        var MenuItems = document.getElementById('MenuItems')
+        MenuItems.style.maxHeight = "0px";
+        function menuToggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px"
+            }
+            else {
+                MenuItems.style.maxHeight = "0px"
+            }
+        }
+
+    </script>
+    <!-- ---------------Js For Product Gallery------------->
+    <script>
+        var SmallImg = document.getElementsByClassName("small-img");
+        SmallImg[0].onclick = function () {
+            ProductImg.src = SmallImg[0].src;
+        }
+        SmallImg[1].onclick = function () {
+            ProductImg.src = SmallImg[1].src;
+        }
+        SmallImg[2].onclick = function () {
+            ProductImg.src = SmallImg[2].src;
+        }
+        SmallImg[3].onclick = function () {
+            ProductImg.src = SmallImg[3].src;
+        }
+
+    </script>
+
+</body>
+
+
+</html>

@@ -1,0 +1,160 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HunnyStore | Ecommerce Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>   
+</head>
+
+<body>
+
+    <!-- -------------Navbar----------- -->
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="RedStore_img/images/logo.png" alt="logo" width="125px">
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a>
+                        </li>
+                        <li><a href="products.html">Products</a>
+                        </li>
+                        <!-- <li><a href="AboutUs.html">About</a></li> -->
+                        <li><a href="ContactUs.html">Contact</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+                <img src="RedStore_img/images/cart.png" alt="cart" width="30px" height="30px">
+                <img src="RedStore_img/images/menu.png" alt="cart" class="menu-icon" onclick="menuToggle()">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- -----------About US-------------->
+
+    <div class="about-container">
+        <div class="child1_contaiener">
+            <div class="up_left">
+                <hr />
+                <h3>WHO WE ARE</h3>
+            </div>
+            <div class="up_right">
+                <p>
+                    we're an independently owned,stretegic creative agency - forever
+                    curious and ready to transform the way business is done.
+                </p>
+            </div>
+        </div>
+        <div class="child2_container">
+            <div class="down_left">
+                <img src="./RedStore_Img//images/hunny.jpg" alt="husnain" />
+            </div>
+            <div class="down_right">
+                <h3>
+                    OUR PEOPLE COME FIRST
+                </h3>
+                <p>
+                    Although we are well-oiled machine, our people are far from cogs.
+                    The telent we cltivate gets the importance of their respective craft.
+                    it help to better serve of each other and out parteners, and it show in everything - fro what we
+                    design
+                    and produce, to what we value and beleive.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------footer--------->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios modile phone</p>
+                    <div class="app-logo">
+                        <img src="RedStore_img/images/play-store.png" alt="img">
+                        <img src="RedStore_img/images/app-store.png" alt="img">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="RedStore_img/images/logo-white.png" alt="">
+                    <p>Our purpose is to miantain sustainability Mek the Pleasure and
+                        Benefit of Sports Accessible to many.
+                    </p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return to Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>FaceBook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2020 - Hunny Khan</p>
+        </div>
+
+
+        <!-- ----------------js for toggle menu----------->
+
+        <script>
+            var MenuItems = document.getElementById('MenuItems')
+            MenuItems.style.maxHeight = "0px";
+            function menuToggle() {
+                if (MenuItems.style.maxHeight == "0px") {
+                    MenuItems.style.maxHeight = "200px"
+                }
+                else {
+                    MenuItems.style.maxHeight = "0px"
+                }
+            }
+
+        </script>
+        <!-- ---------------Js For Product Gallery------------->
+        <script>
+            var SmallImg = document.getElementsByClassName("small-img");
+            SmallImg[0].onclick = function () {
+                ProductImg.src = SmallImg[0].src;
+            }
+            SmallImg[1].onclick = function () {
+                ProductImg.src = SmallImg[1].src;
+            }
+            SmallImg[2].onclick = function () {
+                ProductImg.src = SmallImg[2].src;
+            }
+            SmallImg[3].onclick = function () {
+                ProductImg.src = SmallImg[3].src;
+            }
+
+        </script>
+
+</body>
+
+
+</html>
